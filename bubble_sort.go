@@ -4,6 +4,11 @@ import "fmt"
 
 func main() {
 	numbers := []int{5, 3, 2, 6, 10, 8, 20, 44, 33, 12, 16, 50, 37, 1, 24}
+	fmt.Println("Before:", numbers)
+	fmt.Println("After:", bubbleSort(numbers))
+}
+
+func bubbleSort(numbers []int) []int {
 	flag := true
 	qtd := len(numbers)
 
@@ -19,5 +24,5 @@ func main() {
 		}
 		qtd--
 	}
-	fmt.Println(numbers)
+	return numbers
 }
