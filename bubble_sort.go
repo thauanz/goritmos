@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	numbers := randomize.Generate(300, 300)
+	numbers := randomize.Generate(100, 300)
 
 	fmt.Println("Before:", numbers)
 	fmt.Println("After:", bubbleSort(numbers))
