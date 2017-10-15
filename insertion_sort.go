@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"goritmos/randomize"
+)
 
 func main() {
-	numbers := []int{14, 33, 27, 10, 35, 19, 42, 44, 7}
+	numbers := randomize.Generate(50, 700)
 
 	fmt.Println("Before:", numbers)
 	fmt.Println("After:", insertionSort(numbers))

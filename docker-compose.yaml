@@ -3,5 +3,5 @@ services:
   goritmos:
     image: golang:alpine
     volumes:
-      - .:/code
-    working_dir: /code
+      - .:/go/src/goritmos
+    working_dir: /go/src/goritmos

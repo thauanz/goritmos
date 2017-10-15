@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"goritmos/randomize"
 )
 
 func main() {
-	numbers := []int{34, 12, 23, 45, 55, 66, 89, 100, 96, 1000, 83, 88, 8, 9, 1}
+	numbers := randomize.Generate(100, 2000)
 	fmt.Println("Before:", numbers)
 	shellSort(numbers)
 	fmt.Println("After:", numbers)

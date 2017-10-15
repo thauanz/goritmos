@@ -1,10 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"goritmos/randomize"
+)
 
 func main() {
-	numbers := []int{14, 33, 27, 10, 35, 19, 42, 44, 7, 16, 36, 100}
-
+	numbers := randomize.Generate(100, 500)
 	fmt.Println("Before:", numbers)
 	fmt.Println("After:", selectionSort(numbers))
 }
@@ -23,7 +25,6 @@ func selectionSort(numbers []int) []int {
 		number := numbers[x]
 		numbers[x] = numbers[indexMin]
 		numbers[indexMin] = number
-		fmt.Println(numbers)
 	}
 	return numbers
 }
